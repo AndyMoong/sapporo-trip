@@ -22,6 +22,15 @@
       --box-shadow: rgba(0, 0, 0, 0.1);
       --tips-bg: #e6f3ff;
     }
+	
+	.section img {
+	opacity: 0; /* Start with image invisible */
+	transition: opacity 1s ease-in-out; /* Smooth transition for 1 second */
+	}
+
+	.section img.loaded {
+	opacity: 1;  /* Make image fully visible */
+	}
 
     [data-theme="dark"] {
       --bg-color: #121212;
@@ -1528,6 +1537,13 @@
 			navContainer.classList.remove("expanded");
 		  }
 		});
+
+		window.addEventListener('load', () => {
+		const images = document.querySelectorAll('.section img');
+		images.forEach(img => {
+		  img.classList.add('loaded');
+		});
+	  });
 
 
       // Dark Mode Toggle
