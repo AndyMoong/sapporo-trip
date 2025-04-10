@@ -650,6 +650,7 @@
       text-decoration: none;
       margin-top: 20px;
       font-weight: bold;
+	  font-size: 14px;
       transition: background-color 0.3s ease;
     }
 
@@ -762,8 +763,11 @@
       </div>
     </div>
 
-    <!-- PDF Download Button -->
-    <a href="#" class="pdf-download" id="pdf-download">Download as PDF</a>
+    <!-- PDF Download Button (HIDDEN FOR NOW) -->
+    <a href="#" class="pdf-download" id="pdf-download">Download as PDF</a><br>
+
+	<!-- Expand All Section Button -->
+	<button id="toggle-all-sections" class="pdf-download" style="border: none; margin-bottom: 20px;">Expand All Sections</button>
 
     <!-- Quick Reference Section -->
     <div class="section" id="quick-reference">
@@ -1644,8 +1648,50 @@
       // PDF Download functionality (mock)
       document.getElementById('pdf-download').addEventListener('click', function(e) {
         e.preventDefault();
-        alert('In a full implementation, this would generate and download a PDF version of the itinerary.');
+        alert('Still needs work. When working, this would generate and download a PDF version of the itinerary. Maybe.');
       });
+	  
+	  // ===== EXPAND/COLLAPSE ALL STARTS =====
+
+		const toggleAllButton = document.getElementById('toggle-all-sections');
+		const allCollapsibleHeaders = document.querySelectorAll('.collapsible-header');
+		const allCollapsibleContents = document.querySelectorAll('.collapsible-content');
+
+		if (toggleAllButton && allCollapsibleHeaders.length > 0 && allCollapsibleContents.length > 0) {
+		  let areAllExpanded = false; // Start assuming sections are collapsed
+
+		  toggleAllButton.addEventListener('click', function() {
+			// Decide whether we need to expand or collapse
+			const expandAction = !areAllExpanded;
+
+			// Loop through all headers and content sections
+			allCollapsibleHeaders.forEach((header, index) => {
+			  const content = header.nextElementSibling; // Assumes content is right after header
+			  if (content && content.classList.contains('collapsible-content')) {
+				if (expandAction) {
+				  // Expand this section
+				  header.classList.add('expanded');
+				  content.classList.add('open');
+				} else {
+				  // Collapse this section
+				  header.classList.remove('expanded');
+				  content.classList.remove('open');
+				}
+			  }
+			});
+
+			// Update the button text and the state tracker
+			if (expandAction) {
+			  toggleAllButton.textContent = 'Collapse All Sections';
+			  areAllExpanded = true;
+			} else {
+			  toggleAllButton.textContent = 'Expand All Sections';
+			  areAllExpanded = false;
+			}
+		  });
+		}
+	
+	  
     });
   </script>
 </body>
