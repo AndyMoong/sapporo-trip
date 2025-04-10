@@ -1504,6 +1504,27 @@
         }
       });
 
+	//FOR MENU CLOSING BEHAVIOR
+
+		const navContainer = document.querySelector(".nav-container");
+		const navButton = document.querySelector(".nav-button");
+
+		// Close menu when clicking a link inside
+		document.querySelectorAll(".nav-content a").forEach(link => {
+		  link.addEventListener("click", () => {
+			navContainer.classList.remove("expanded");
+		  });
+		});
+
+		// Close menu when clicking outside
+		document.addEventListener("click", function(event) {
+		  // Check if the click is outside the nav container AND not on the button itself
+		  if (navContainer.contains(event.target) === false && event.target !== navButton) {
+			navContainer.classList.remove("expanded");
+		  }
+		});
+
+
       // Dark Mode Toggle
       const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
       
@@ -1561,6 +1582,40 @@
       window.closeImage = function() {
         document.getElementById('imageModal').style.display = 'none';
       };
+
+	// ===== NEW CODE FOR IMAGE MODAL CLICK LISTENER STARTS =====
+
+	// Add event listener to open modal when thumbnail is clicked
+		document.addEventListener('click', function(e) {
+		// Check if the clicked element has the class 'seatmap-thumbnail'
+		if (e.target.classList.contains('seatmap-thumbnail')) {
+		  // Get the full image URL from the data attribute OR the src itself as fallback
+		  const fullImageSrc = e.target.dataset.fullImage || e.target.src;
+		  // Call the existing openImage function with the correct image source
+		  window.openImage(fullImageSrc);
+		}
+	});
+
+	// Add event listener to the modal itself to close when clicking the background
+		const modalElement = document.getElementById('imageModal');
+		if (modalElement) {
+			modalElement.addEventListener('click', function(e) {
+				// Check if the click is directly on the modal background (not the image inside)
+				if (e.target === modalElement) {
+				  window.closeImage();
+				}
+			});
+		}
+
+	// Add event listener to the close button
+		const closeButtonElement = document.querySelector('#imageModal .close-button');
+		if (closeButtonElement) {
+			closeButtonElement.addEventListener('click', function() {
+				window.closeImage();
+			});
+		}
+
+
 
       // Weather Widget
       function updateWeather() {
