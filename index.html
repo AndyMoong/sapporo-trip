@@ -64,20 +64,20 @@
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.1rem;
       text-align: center;
       margin-top: 2rem;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin-top: 2rem;
       color: var(--heading-color);
       transition: color 0.3s ease;
     }
 
     h3 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-top: 1.5rem;
       color: var(--subheading-color);
       transition: color 0.3s ease;
@@ -750,19 +750,7 @@
     <p>Lets keep things flexible and make final decisions based on 🔋 energy level, 🌟 wellness, and 😄 mood. Remember it's suppose to be <b>fun</b></p>
 
     <!-- Weather Widget -->
-    <div class="weather-widget" id="weather-widget">
-      <div class="weather-info">
-        <div class="weather-icon">❄️</div>
-        <div class="weather-details">
-          <div class="weather-temp">Loading...</div>
-          <div class="weather-desc">Checking weather...</div>
-        </div>
-      </div>
-      <div>
-        <div class="weather-location">Sapporo, Japan</div>
-        <div class="weather-update">Last updated: --</div>
-      </div>
-    </div>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/43d06141d35/sapporo/" data-label_1="SAPPORO" data-label_2="WEATHER" data-days="5" data-theme="original" >SAPPORO WEATHER</a>
 
     <!-- PDF Download Button (HIDDEN FOR NOW) -->
     <a href="#" class="pdf-download" id="pdf-download">Download as PDF</a><br>
@@ -779,7 +767,7 @@
       <div class="collapsible-content">
         <table>
           <tr><th>📍 Hotel</th><td>Wyndham Garden Sapporo Odori</td></tr>
-          <tr><th>🚆 Transport</th><td>JR Rapid Airport Line, Welcome Suica for local travel</td></tr>
+          <tr><th>🚆 Transport</th><td>JR Rapid Airport Line, Kitaca/ ICOCA for local travel<br> Buy <b>Kitaca</b> card from <b>New Chitose, Level B1</b> machines. Requires cash.</td></tr>
           <tr><th>💴 Cash Needed?</th><td>Yes, for small vendors & some rural areas</td></tr>
           <tr><th>📞 Emergency Numbers</th><td>110 (Police), 119 (Fire/Ambulance)</td></tr>
           <tr><th>🔄 Time Zone</th><td>Japan Standard Time (GMT+9)</td></tr>
@@ -830,7 +818,8 @@
           <li><a href="#day10">Day 10: Departure</a></li>
           <li><a href="#tips">Trip Tips</a></li>
           <li><a href="#flight-info">Flights and Seats Info</a></li>
-          <li><a href="#places-to-eat">Places to Eat</a></li>
+		  <li><a href="#reminders">Reminders</a></li>
+		  <li><a href="#places-to-eat">Places to Eat</a></li>
           <li><a href="#places-of-interest">Places of Interest</a></li>
         </ul>
       </div>
@@ -850,7 +839,7 @@
           <tr><th>🏨 Hotel Check-in</th><td>Wyndham Garden Sapporo Odori<br><b>Free drink</b> tickets from <b>17:30-21:00</b><br><b>Free ice cream/ coffee</b> from <b>06:00-18:00</b></td></tr>
           <tr><th>🍱 Dinner</th><td>Nearby <b>convenience store</b> (7-11 & FamilyMart are 1-2 mins walk)</td></tr>
         </table>
-        <img src="https://lh3.googleusercontent.com/d/1OpVJuc3hHehYaP0o59v9vTROMEyks28b" alt="Wyndham Garden Odori Sapporo" width="100%">
+        <img src="https://lh3.googleusercontent.com/d/1OpVJuc3hHehYaP0o59v9vTROMEyks28b" alt="Wyndham Garden Odori Sapporo" width="100%" loading="lazy">
 
         <div class="map" id="map-wyndham"></div>
         <h3>📜 Fun Facts & Travel Tips</h3>
@@ -874,14 +863,14 @@
           <tr><th>🍽️ Breakfast</th><td>At a nearby <b>café</b></td></tr>
           <tr><th>🏞️ Visit</th><td><strong>Odori Park</strong> & <strong>Sapporo TV Tower</strong> (¥720/adult, ¥300/child)</td></tr>
         </table>
-        <img src="https://lh3.googleusercontent.com/d/1V5sV717-mfngMpG7zc4_BMhMiboYrTX2" alt="Sapporo TV Tower Odori Park" width="100%">
+        <img src="https://lh3.googleusercontent.com/d/1V5sV717-mfngMpG7zc4_BMhMiboYrTX2" alt="Sapporo TV Tower Odori Park" width="100%" loading="lazy">
         <div class="map" id="map-odori"></div>
         <h3>Afternoon</h3>
         <table>
           <tr><th>🍜 Lunch</th><td><b>Ramen Yokocho</b> (Ganso Sapporo Ramen Street)</td></tr>
           <tr><th>🍺 Visit</th><td><strong>Sapporo Beer Museum</strong> (free entry) & <strong>Sapporo Factory</strong></td></tr>
         </table>
-        <img src="https://lh3.googleusercontent.com/d/16w77zK1YrPkAeQj_7o-6qOua8FV3hvEi" alt="Sapporo Beer Museum" width="100%">
+        <img src="https://lh3.googleusercontent.com/d/16w77zK1YrPkAeQj_7o-6qOua8FV3hvEi" alt="Sapporo Beer Museum" width="100%" loading="lazy">
         
         <div class="map" id="map-beer-museum"></div>
         <h3>Evening</h3>
@@ -890,7 +879,7 @@
           <tr><th>🛍️ Shopping</th><td>Explore <b>Daiso, Tokyu Hands</b></td></tr>
         </table>
         
-        <img src="https://lh3.googleusercontent.com/d/1GvTtqfcrnYEGOulZoflZ5jieoJC3tKms" alt="Nemuro at Sapporo" width="100%">
+        <img src="https://lh3.googleusercontent.com/d/1GvTtqfcrnYEGOulZoflZ5jieoJC3tKms" alt="Nemuro at Sapporo" width="100%" loading="lazy">
         <h3>📜 Fun Facts & Travel Tips</h3>
         <ul>
           <li><strong>Odori Park</strong> spans <b>1.5 km</b> and hosts the famous <b>Sapporo Snow Festival</b> every February.</li>
@@ -920,14 +909,14 @@
           <tr><th>🚍 Transport</th><td>Bus to <b>Jozankei Onsen</b> (1.5h, ¥1,500)</td></tr>
           <tr><th>🛁 Activity</th><td><b>Ladies</b>: Open-air onsen 🌿 / <b>Men & boys</b>: Explore nearby town and onsen egg</td></tr>
         </table>
-        <img src="https://lh3.googleusercontent.com/d/1asr1Qn4ob8Su1b-ECSIAVzbK1u8YqLWD" alt="Jozankei Onsen" width="100%">
+        <img src="https://lh3.googleusercontent.com/d/1asr1Qn4ob8Su1b-ECSIAVzbK1u8YqLWD" alt="Jozankei Onsen" width="100%" loading="lazy">
         <div class="map" id="map-jozankei"></div>
         <h3>Evening</h3>
         <table>
           <tr><th>🍽️ Sapporo White Illumination</th><td>Return to <b>Odori Park</b>, for LED lights event</td></tr>
           <tr><th>🍽️ Dinner</th><td> Dine at a local <b>izakaya</b>. May be crowded due to x'mas</td></tr>
         </table>
-        <img src="https://lh3.googleusercontent.com/d/15yjpt7N3YqAtZ44UmF0-fkT1JS-jmxd5" alt="Jozankei Onsen" width="100%">
+        <img src="https://lh3.googleusercontent.com/d/15yjpt7N3YqAtZ44UmF0-fkT1JS-jmxd5" alt="Jozankei Onsen" width="100%" loading="lazy">
         <h3>📜 Fun Facts & Travel Tips</h3>
         <ul>
           <li>Remember to <b>bring small towels</b> to dry feet, for those <b>visiting dipping pool</b></li>
@@ -964,20 +953,20 @@
 			<br><b>BigRuns bus</b> - Return transfer + 7H lift ticket. Needs to be <a href="https://bigruns.com/basu_group/%e5%86%ac%e5%ad%a3%e9%81%8b%e8%a1%8c-%e6%9c%ad%e5%b9%8c%e5%b8%82%e5%86%85%e6%8c%87%e5%ae%9a%e3%83%9b%e3%83%86%e3%83%ab-%e3%82%b5%e3%83%83%e3%83%9d%e3%83%ad%e3%83%86%e3%82%a4%e3%83%8d?lang=en" target="_blank"><b>reserved 2 weeks in advance</b></a>
 			<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Hotel Abest Sapporo</b> is the closest pickup/ drop off. 200m from our hotel</td></tr>
         </table>
-        <img src="https://lh3.googleusercontent.com/d/1lIXDQgt1fm9Qgf_0b61xEiN-rB2J_pBV" alt="Sapporo Teine" width="100%">
+        <img src="https://lh3.googleusercontent.com/d/1lIXDQgt1fm9Qgf_0b61xEiN-rB2J_pBV" alt="Sapporo Teine" width="100%" loading="lazy">
       <div class="map" id="map-teine"></div>
       <h3>Afternoon</h3>
       	<table>
     		<tr><th>🍽️ Lunch</th><td>Ski resort <b>cafeteria</b> (¥1,000–¥1,500)</td></tr>
     		<tr><th>🏔️ Activity</th><td>Continue skiing/snowboarding, visit kids park or relax at the resort</td></tr>
 		</table>
-		<img src="https://lh3.googleusercontent.com/d/1xcc0K-AYByzHunb6vOq-oTrTC1Y9d85h" alt="Sapporo Teine Kids Park" width="100%">
+		<img src="https://lh3.googleusercontent.com/d/1xcc0K-AYByzHunb6vOq-oTrTC1Y9d85h" alt="Sapporo Teine Kids Park" width="100%" loading="lazy">
 		
 		  <h3>Evening</h3>
 			<table>
 				<tr><th>🍖 Dinner</th><td>Try <b>Genghis Khan (Jingisukan) grilled lamb</b> (¥2,500–¥3,500)<br>Visit Aruko Jingisukan near our hotel</td></tr>
 		</table>
-		<img src="https://lh3.googleusercontent.com/d/1koxuBH0OqdFWAs1vDuZ2GUecELeHMDRX" alt="Jingisukan" width="100%">
+		<img src="https://lh3.googleusercontent.com/d/1koxuBH0OqdFWAs1vDuZ2GUecELeHMDRX" alt="Jingisukan" width="100%" loading="lazy">
 		<h3>📜 Fun Facts & Travel Tips</h3>
 		<ul>
 				<li><strong>Sapporo Teine</strong> was a <b>venue for the 1972 Winter Olympics</b>. It’s perfect for beginners!</li>
@@ -1000,7 +989,7 @@
     		<tr><th>🏛️ Visit</th><td><strong>Hokkaido Museum of Modern Art</strong> (¥500/adult, ¥250/child)</td></tr>
     		<tr><th>🏛️ Visit</th><td><strong>Former Hokkaido Government Office Building</strong> (free entry)</td></tr>
 		</table>
-		<img src="https://lh3.googleusercontent.com/d/168zA0f5AJKUdKzEq2jNt3SpAxmmRNCw0" alt="Government Office" width="100%">	
+		<img src="https://lh3.googleusercontent.com/d/168zA0f5AJKUdKzEq2jNt3SpAxmmRNCw0" alt="Government Office" width="100%" loading="lazy">	
 
       <div class="map" id="map-museum"></div>
       <h3>Afternoon</h3>
@@ -1009,7 +998,7 @@
     		<tr><th>🏔️ Visit</th><td><strong>Mt Moiwa</strong>, enjoy amazing city view. Consider catching the <b>sunset</b><br> Use <b>Ropeway + Mini cable car</b> (¥2100/adult, ¥1050/child)<br> <b>Cash-only</b> at ticket counters</td></tr>
     		<tr><th>🛍️ Shopping</th><td>Explore <b>Tanukikoji Shopping Street</b> for souvenirs & snacks</td></tr>
   	</table>
-		<img src="https://lh3.googleusercontent.com/d/1RhTtNCkbqFyDXn0oR8q3Erbdxa1wjE7F" alt="Curry Ramen" width="100%">
+		<img src="https://lh3.googleusercontent.com/d/1RhTtNCkbqFyDXn0oR8q3Erbdxa1wjE7F" alt="Curry Ramen" width="100%" loading="lazy">
 		<br>
 		<br>
 		<img src="https://lh3.googleusercontent.com/d/1j9nSzQH8VhU2012y1T5IOt2Fejw06SW9" alt="Mt Moiwa" width="100%">	
@@ -1019,7 +1008,7 @@
       	<table>
     		<tr><th>🍽️ Dinner</th><td>Casual dining or <b>convenience store meal</b></td></tr>
 		</table>
-		<img src="https://lh3.googleusercontent.com/d/1ijdhe5eUhqBZfoAGWx8mj6W0yPQ7XJ-b" alt="Family Mart" width="100%">
+		<img src="https://lh3.googleusercontent.com/d/1ijdhe5eUhqBZfoAGWx8mj6W0yPQ7XJ-b" alt="Family Mart" width="100%" loading="lazy">
 
 		<h3>📜 Fun Facts & Travel Tips</h3>
 			<ul>
@@ -1044,7 +1033,7 @@
     			<tr><th>🚆 Transport</th><td>Train to <b>Otaru</b> (30 min, ¥640)</td></tr>
     			<tr><th>🏞️ Visit</th><td><strong>Otaru Canal</strong> & <strong>Sakaimachi Street</strong></td></tr>
   		</table>
-		<img src="https://lh3.googleusercontent.com/d/1IqyEdZbrLzy81nPcWw_vo72lxKu3iveo" alt="Sakaimachi Street" width="100%">
+		<img src="https://lh3.googleusercontent.com/d/1IqyEdZbrLzy81nPcWw_vo72lxKu3iveo" alt="Sakaimachi Street" width="100%" loading="lazy">
 
       <div class="map" id="map-otaru"></div>
       <h3>Afternoon</h3>
@@ -1058,7 +1047,7 @@
     			<tr><th>🚆 Return</th><td>Train back to Sapporo</td></tr>
     			<tr><th>🍽️ Dinner</th><td>Casual dining in Sapporo</td></tr>
   	</table>
-	<img src="https://lh3.googleusercontent.com/d/1cH8qdgwhPAHhJlC7s5NdvATt4yeN4nRN" alt="Otaru Canal" width="100%">
+	<img src="https://lh3.googleusercontent.com/d/1cH8qdgwhPAHhJlC7s5NdvATt4yeN4nRN" alt="Otaru Canal" width="100%" loading="lazy">
 	<h3>📜 Fun Facts & Travel Tips</h3>
   		<ul>
     			<li><strong>Otaru Canal</strong> was built in <b>1923</b> and was once a <b>major trading port</b> for Hokkaido.</li>
@@ -1081,7 +1070,7 @@
 			<tr><th>🎮 Visit</th><td><strong>Pokémon Center Sapporo</strong> & <strong>Animate Sapporo</strong></td></tr>
 			<tr><th>📷 Explore</th><td><strong>BIC Camera</strong> and Yodobashi Camera for Japanese gadgets & electronics</td></tr>
 		</table>
-		<img src="https://lh3.googleusercontent.com/d/1fJksBFmW-g76e2qN_FMODzB9PmgxUsQZ" alt="Yodobashi Camera" width="100%">
+		<img src="https://lh3.googleusercontent.com/d/1fJksBFmW-g76e2qN_FMODzB9PmgxUsQZ" alt="Yodobashi Camera" width="100%" loading="lazy">
 
 	<div class="map" id="map-pokemon"></div>
 	<h3>Afternoon</h3>
@@ -1094,7 +1083,7 @@
 			<tr><th>🌳 Relax</th><td>Walk through <b>Nakajima Park</b> for a scenic break</td></tr>
 			<tr><th>🍣 Dinner</th><td>Casual dining or <b>conveyor belt sushi</b></td></tr>
 		</table>
-		<img src="https://lh3.googleusercontent.com/d/1vABjH64f6puzlF1zynHqgPLNhqikIYcp" alt="Nakajima Park" width="100%">
+		<img src="https://lh3.googleusercontent.com/d/1vABjH64f6puzlF1zynHqgPLNhqikIYcp" alt="Nakajima Park" width="100%" loading="lazy">
 	<h3>📜 Fun Facts & Travel Tips</h3>
 		<ul>
 			<li>Remember to check the <a href="https://taxfreeshops.jp/en" target="_blank" style="color: #0066cc; text-decoration: underline;">Tax Free Shop online</a> for additional discounts when visiting BIC camera</li>
@@ -1115,7 +1104,7 @@
       	<table>
     		<tr><th>🍫 Visit</th><td><strong>Shiroi Koibito Park</strong> (¥600/adult, ¥300/child) – Chocolate-making experience</td></tr>
 		</table>
-		  <img src="https://lh3.googleusercontent.com/d/1uqwhxzmXRV9GLGHqJV6LeDmgeXCAPX8Y" alt="Shiroi Koibito Park" width="100%">
+		  <img src="https://lh3.googleusercontent.com/d/1uqwhxzmXRV9GLGHqJV6LeDmgeXCAPX8Y" alt="Shiroi Koibito Park" width="100%" loading="lazy">
 		  <div class="map" id="map-shiroi"></div>
       <h3>Afternoon</h3>
       	<table>
@@ -1123,7 +1112,7 @@
     		<tr><th>🦁 Visit</th><td><b>Maruyama Zoo</b> (¥600/adult, ¥300/child) – See Hokkaido’s native wildlife</td></tr>
     		<tr><th>⛩️ Explore</th><td>Visit <b>Hokkaido Shrine</b> for a cultural experience</td></tr>
 		</table>
-		<img src="https://lh3.googleusercontent.com/d/1LmatwKZfMNzTN37fKpFMm-AnWkuOgp0a" alt="Maruyama Zoo" width="100%">
+		<img src="https://lh3.googleusercontent.com/d/1LmatwKZfMNzTN37fKpFMm-AnWkuOgp0a" alt="Maruyama Zoo" width="100%" loading="lazy">
 		<div class="map" id="map-maruyamazoo"></div>
       <h3>Evening</h3>
       	<table>
@@ -1152,7 +1141,7 @@
     		<tr><th>🦀 Visit</th><td><strong>Nijo Market</strong> for fresh seafood & local products</td></tr>
     		<tr><th>🛍️ Shopping</th><td>Explore <b>Hokkaido Shiki Marche</b> at Sapporo station for last-minute souvenirs</td></tr>
   	</table>
-	  <img src="https://lh3.googleusercontent.com/d/1psKH7rO8vNoxFxhsfOycXKEDSHjvktS7" alt="Nijo Market" width="100%">
+	  <img src="https://lh3.googleusercontent.com/d/1psKH7rO8vNoxFxhsfOycXKEDSHjvktS7" alt="Nijo Market" width="100%" loading="lazy">
       <div class="map" id="map-nijo"></div>
       <h3>Afternoon</h3>
       	<table>
@@ -1160,7 +1149,7 @@
     		<tr><th>🌳 Explore</th><td>Walk around <b>Odori Park</b> for a relaxing break</td></tr>
     		<tr><th>🍰 Treat</th><td>Visit a <b>Happy Pancake</b> for fluffy japanese pancake</td></tr>
   	</table>
-	  <img src="https://lh3.googleusercontent.com/d/13mv1CGBjm682foGQdTyQUDO5sBWlaSOy" alt="Happy Pancake" width="100%">
+	  <img src="https://lh3.googleusercontent.com/d/13mv1CGBjm682foGQdTyQUDO5sBWlaSOy" alt="Happy Pancake" width="100%" loading="lazy">
       <div class="map" id="map-happypancake"></div>
       <h3>Evening</h3>
       	<table>
@@ -1193,7 +1182,7 @@
 				<tr><th>🚆 Transport</th><td>Take the <b>train to New Chitose Airport</b> (40 min, ¥1,150/adult)</td></tr>
 				<tr><th>✈️ Explore</th><td>Visit <b>Doraemon Waku Waku Sky Park</b> at the airport (free entry)</td></tr>
 		</table>
-		  <img src="https://lh3.googleusercontent.com/d/1qoDxr9mp664WwciVmz7Jf2E1VAuiHXNE" alt="Doraemon Cafe" width="100%">
+		  <img src="https://lh3.googleusercontent.com/d/1qoDxr9mp664WwciVmz7Jf2E1VAuiHXNE" alt="Doraemon Cafe" width="100%" loading="lazy">
 		  
 		  <h3>Evening</h3>
 			<table>
@@ -1415,59 +1404,119 @@
 
 
     <!-- Before You Go Section -->
-    <div class="section" id="before-you-go">
+    <div class="section" id="reminders">
       <div class="collapsible-header">
-        <h2>Before You Go</h2>
+        <h2>🔔 Reminders</h2>
         <span class="toggle-icon">▼</span>
       </div>
       <div class="collapsible-content">
         <h3>Pre-Trip Preparation Checklist</h3>
         <table>
-          <tr><th>📱 Apps</th><td>Download recommended apps and offline maps</td></tr>
+          <tr><th>📱 Apps</th><td>Download recommended apps and <b>offline maps</b></td></tr>
           <tr><th>💴 Currency</th><td>Exchange some yen before departure (¥30,000-50,000 recommended per person)</td></tr>
-          <tr><th>🔌 Adapters</th><td>Japan uses Type A/B plugs (100V) - bring adapters if needed</td></tr>
+          <tr><th>🔌 Adapters</th><td>Japan uses Type A/B plugs (100V) - bring <b>adapters</b> if needed<br>Bring <b>power strip</b> to reduce need for multiple adaptors</td></tr>
           <tr><th>🧥 Clothing</th><td>Pack thermal layers, waterproof outerwear, and comfortable walking boots</td></tr>
           <tr><th>📄 Documents</th><td>Make copies of passports and store separately from originals</td></tr>
           <tr><th>💊 Medications</th><td>Bring sufficient supply plus basic first aid items</td></tr>
-          <tr><th>🔋 Electronics</th><td>Portable chargers, camera batteries, memory cards</td></tr>
+          <tr><th>🔋 Electronics</th><td>Portable chargers, battery banks, <b>AirTag</b>.<br>Portable lights - Hotel rooms can be quite dark based on reviews.</td></tr>
           <tr><th>☎️ Contacts</th><td>Save emergency contacts and hotel information offline</td></tr>
         </table>
-      </div>
-    </div>
-
-    <!-- Upon Arrival Section -->
-    <div class="section" id="upon-arrival">
-      <div class="collapsible-header">
-        <h2>Upon Arrival</h2>
-        <span class="toggle-icon">▼</span>
-      </div>
-      <div class="collapsible-content">
-        <h3>First-Day Essentials</h3>
-        <table>
+		<br>
+		<h3>Upon Arrival</h3>
+		<table>
           <tr><th>🚇 Transport Card</th><td>Purchase Kitaca card at New Chitose Airport (Level B1)</td></tr>
           <tr><th>📱 Internet</th><td>Connect to airport WiFi to confirm hotel directions</td></tr>
-          <tr><th>💴 Cash</th><td>Withdraw additional yen from airport ATMs if needed</td></tr>
+          <tr><th>💴 Cash</th><td>Withdraw additional yen from airport ATMs if needed. 7-11 is preferred</td></tr>
           <tr><th>🧣 Weather Check</th><td>Confirm current conditions and adjust clothing accordingly</td></tr>
           <tr><th>🏨 Hotel Contact</th><td>Save hotel phone number and address in Japanese</td></tr>
         </table>
-      </div>
-    </div>
-
-    <!-- Before You Leave Section -->
-    <div class="section" id="before-you-leave">
-      <div class="collapsible-header">
-        <h2>Before You Leave</h2>
-        <span class="toggle-icon">▼</span>
-      </div>
-      <div class="collapsible-content">
-        <h3>Departure Preparation</h3>
-        <table>
+		<br>
+		<h3>Before You Leave</h3>
+		<table>
           <tr><th>🧳 Packing</th><td>Allow extra time for packing souvenirs</td></tr>
           <tr><th>💴 Currency</th><td>Use remaining yen for airport shopping or exchange</td></tr>
           <tr><th>🚆 Transport</th><td>Confirm airport train times the day before departure</td></tr>
           <tr><th>🏨 Check-out</th><td>Hotel check-out is typically 10:00-11:00 AM</td></tr>
           <tr><th>🧾 Tax Refund</th><td>Process any remaining tax refund forms at the airport</td></tr>
         </table>
+      </div>
+    </div>
+
+    <!-- PLACES TO EAT -->
+    <div class="section" id="places-to-eat">
+      <div class="collapsible-header">
+        <h2>🍜 Places to Eat</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="collapsible-content">
+        <h3>📍 Near Wyndham Garden</h3>
+		  <ul>
+			<li><strong>Ramen カタカナトメジ</strong> - 4.1 rating ¥1,000–2,000 🍜 <a href="https://maps.app.goo.gl/JcjkcWVKUG2AD1278" target="_blank">Link</a></li>
+			<img src="https://lh3.googleusercontent.com/d/1IHiu9es07-eDwvRGKfSHE9_G1DQmDlRq" alt="Ramen opposite Wyndham" width="100%">
+			<br>
+			<li><strong>Ramen 豚骨拉麺大河</strong> - 4.7 rating ¥1,000–2,000 🍜 <a href="https://maps.app.goo.gl/ipMkXjWzBuLajGKU6" target="_blank">Link</a></li>
+			<img src="https://lh3.googleusercontent.com/d/1WJnG9jngnTQt43fHlxONGwR2BgM4Qvaj" alt="Ramen2 opposite Wyndham" width="100%">
+			<br>
+			<li><strong>Aruko Jingisukan</strong> - 4.5 rating ¥2,000–3,000 🍖 <a href="https://maps.app.goo.gl/GwZyzVvTnGdy3SJr7" target="_blank">Link</a></li>
+			<img src="https://lh3.googleusercontent.com/d/1yTbqALXC0jOYAo1LDstnATUz5XOKDKT_" alt="Aruko Jingisukan" width="100%">
+			<br>
+			<li><strong>Soul Store Soup Curry</strong> - 4.4 rating ¥1,000–2,000 🍛 <a href="https://maps.app.goo.gl/9hS6qVGPL8krsTUy8" target="_blank">Link</a></li>
+			<img src="https://lh3.googleusercontent.com/d/1gvrfpL2Xx05NL3f6qIJpjQynyMZY-fbZ" alt="Soul Store Soup Curry" width="100%">
+			<br>
+			<li><strong>Hina-chan Okonomiyaki</strong> - 4.2 rating ¥1,000–2,000 🍛 <a href="https://maps.app.goo.gl/1xxA4HLjDBBQguaj8" target="_blank">Link</a></li>
+			<img src="https://lh3.googleusercontent.com/d/1MUmvZIjyV-0yLhk9sNg_0Ax2GlVUY9Of" alt="Hina-chan" width="100%">
+		  </ul>
+
+		  <h3>📍 Near Sapporo Station</h3>
+		  <ul>
+			<li><strong>Kushidori</strong> - Affordable yakitori skewers 🍢</li>
+			<li><strong>Kani Honke</strong> - Crab specialty restaurant 🦀</li>
+		  </ul>
+		  
+		   <h3>📍 Near Susukino Station</h3>
+		  <ul>
+			<li><strong>Katsuissen</strong> - Conveyor belt sushi restaurant - 4.2 ¥2,000–4,000 🍣 <a href="https://maps.app.goo.gl/AJs7wxUxCpC5mPeY8" target="_blank">Link</a></li>
+			<img src="https://lh3.googleusercontent.com/d/1p1rc73iGAvn6vJ6K4RG6QWY6kW2f8YbM" alt="Katsuissen" width="100%">
+		  </ul> 
+
+		  <h3>📍 Near Otaru</h3>
+		  <ul>
+			<li><strong>LeTAO</strong> - Famous for cheesecakes 🧀</li>
+			<li><strong>Otaru Sankaku Market</strong> - Fresh seafood bowls 🦐</li>
+		  </ul>
+      </div>
+    </div>
+
+    <!-- Before You Leave Section -->
+    <div class="section" id="places-of-interest">
+      <div class="collapsible-header">
+        <h2>🏯 Places of Interest</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="collapsible-content">
+        <h3>📍 Near Wyndham Garden</h3>
+		<ul>
+		<li><strong>Sapporo Drug Store</strong> 💊 - Tanukikoji shopping street<a href="https://maps.app.goo.gl/ToMGPziuJv7iRnfS8" target="_blank"> - Link</a></li>
+		<img src="https://lh3.googleusercontent.com/d/1ZlK5mtfCA8_dWJ5umYSdiwdFsqBhzoI2" alt="Sapporo Drug Store" width="100%">
+		<br>
+		<li><strong>Mega Don Quijote</strong> 🛒 - Opens 24 hours<a href="https://maps.app.goo.gl/3xU6LFaXc2QpYR8u9" target="_blank"> - Link</a></li>
+		<img src="https://lh3.googleusercontent.com/d/1j8sYuhOFq8cp65TtozLniqXvkku74FQ4" alt="Mega Don Quijote" width="100%">
+		<br>
+		<li><strong>Underground walkway - Odori to Sapporo Station</strong> 🚶‍♂️ - Sapporo Ekimae-dori<a href="https://maps.app.goo.gl/nYiw8uiaU1dZbgPA7" target="_blank"> - Link</a></li>
+		<li><strong>Underground walkway - Odori to Susukino Station</strong> 🚶‍♂️ - Pole Town<a href="https://maps.app.goo.gl/HFR4TFEWjm8TgN5J9" target="_blank"> - Link</a></li>
+		<li><strong>Underground walkway - Odori to East Odori</strong> 🚶‍♂️ - Aurora Town<a href="https://maps.app.goo.gl/c2oqyXcHwuaCLB8m6" target="_blank"> - Link</a></li>
+		<br>
+		<li><strong>Mitsukoshi Building</strong> 🛒 - Posh departmental store opposite Parco<a href="https://maps.app.goo.gl/yji1gUTFhQir3qQ46" target="_blank"> - Link</a></li>
+		<img src="https://lh3.googleusercontent.com/d/1znZpvmFksUDbpc0opAN_D9RxZR24H8Jf" alt="Mitsukoshi Building" width="100%">
+		<br>
+		<li><strong>Laundromat</strong> 🛒 - <b>Laundry</b> near hotel, <b>10 mins walk</b><a href="https://maps.app.goo.gl/PPybnHJ9pMxvjTuj6" target="_blank"> - Link</a></li>
+		<img src="https://lh3.googleusercontent.com/d/1o9OhBaLILJ0zeut0reQEYd3BdmVJaxFU" alt="Laundromat" width="100%">
+		<br>
+		<br>
+		<li><strong>Donguri Ghibli Store</strong> 🛒 - Located on the 7F Parco<a href="https://maps.app.goo.gl/QUa8UAbPBijEekc16" target="_blank"> - Link</a></li>
+		<img src="https://lh3.googleusercontent.com/d/17y13ksJH2-7UPm7bTkqbi7Zt4rintgD6" alt="Donguri Ghibli Store" width="100%">
+		<br>
+		</ul>
       </div>
     </div>
   </div>
@@ -1622,32 +1671,10 @@
 				window.closeImage();
 			});
 		}
+	// Weather Widget from WeatherWidget.io
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 
-
-
-      // Weather Widget
-      function updateWeather() {
-        const weatherWidget = document.getElementById('weather-widget');
-        const weatherTemp = weatherWidget.querySelector('.weather-temp');
-        const weatherDesc = weatherWidget.querySelector('.weather-desc');
-        const weatherUpdate = weatherWidget.querySelector('.weather-update');
-        
-        // In a real implementation, this would fetch from a weather API
-        // For this demo, we'll use static data
-        setTimeout(() => {
-          weatherTemp = '-2°C';
-          weatherDesc = 'Light Snow';
-          weatherUpdate.textContent = 'Last updated: ' + new Date().toLocaleTimeString();
-          
-          // Update weather icon based on conditions
-          const weatherIcon = weatherWidget.querySelector('.weather-icon');
-          weatherIcon.textContent = '❄️';
-        }, 1000);
-      }
-      
-      // Initial weather update
-      updateWeather();
-      
+       
       // PDF Download functionality (mock)
       document.getElementById('pdf-download').addEventListener('click', function(e) {
         e.preventDefault();
